@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiment 1</title>
+</head>
+
+<body>
+    <h1>Experiment 1</h1>
+
+    <h2>Open the console to see how the code functions!</h2>
+
+    <script>
+        /* Instructions: Write a program that uses console.log to print all the numbers from 1 to 100, with two exceptions. For numbers divisible by 3, print "Fizz" instead of the number, and for numbers divisible by 5 (and not 3), print "Buzz" instead.
+
+        - The "for" statement sets the value of i at 1, and will continue to count upwards by 1 (i++) until it reaches 100 (i<101).
+        - The "else" statement at the end makes the console print the value of i
+        - The first "if" statement makes the console print "Fizz" if any of the below numbers result from a division of i by 3.
+        - Otherwise (else if), the console will print "Buzz" if any of the below values result from a division of i by 5.
+        - Otherwise, (else), print i as it would normally appear when counting from 1 to 100.
+
+        - Numbers in the "if" and "else if" statements are all the numbers that 3 and 5 and multiply by without going above 100.
+
+        I know there's probably a more efficient way to do this, but I can't figure it out. */
+
+        for (var i = 1; i < 101; i++) {
+            if (i/3 == 1 || i/3 == 2 || i/3 == 3 || i/3 == 4 || i/3 == 5 || i/3 == 6 || i/3 == 7 || i/3 == 8 || i/3 == 9 || i/3 == 10 || i/3 == 11 || i/3 == 12 || i/3 == 13 || i/3 == 14 || i/3 == 15 || i/3 == 16 || i/3 == 17 || i/3 == 18 || i/3 == 19 || i/3 == 20 || i/3 == 21 || i/3 == 22 || i/3 == 23 || i/3 == 24 || i/3 == 25 || i/3 == 26 || i/3 == 27 || i/3 == 28 || i/3 == 29 || i/3 == 30 || i/3 == 31 || i/3 == 32 || i/3 == 33) {
+                console.log("Fizz");
+            } else if (i/5 == 1 || i/5 == 2 || i/5 == 3 || i/5 == 4 || i/5 == 5 || i/5 == 6 || i/5 == 7 || i/5 == 8 || i/5 == 9 || i/5 == 10 || i/5 == 11 || i/5 == 12 || i/5 == 13 || i/5 == 14 || i/5 == 15 || i/5 == 16 || i/5 == 17 || i/5 == 18 || i/5 == 19 || i/5 == 20) {
+                console.log("Buzz");
+            } else {
+                console.log(i);
+            }
+        }
+    </script>
+</body>
+
+</html>
