@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiment 2</title>
+</head>
+
+<body>
+
+    <h1>Experiment 2</h1>
+
+    <p>Check the console for the answer.</p>
+
+    <script>
+        var colorAsk = prompt("Guess what color I'm thinking of! Is it red, yellow, green, or blue?", " ").toLowerCase();
+        var colorPick = ["red", "yellow", "green", "blue"]
+        var answer = colorPick[randomInt(0, 3)];
+
+        function randomInt (min, max) {
+            return Math.floor ((max-min+1) * Math.random()) + min;
+        }
+
+        if (colorAsk == answer) {
+            console.log("You guessed right!");
+        } else {
+            console.log("You guessed wrong. Try again :^)")
+        }
+
+        console.log(`The answer is: ${answer}`);
+    </script>
+</body>
+
+</html>
