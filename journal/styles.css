@@ -29,9 +29,8 @@ section {
 
 article {
     background-color: #F4F1DE;
-    gap: 20px;
     padding: 10px 20px 20px 20px;
-    margin: auto;
+    margin: auto auto 20px auto;
     border-radius: 10px;
     width: 50%;
 }
