@@ -1,0 +1,29 @@
+body {
+    background-color: black;
+    color: #fff;
+    font-family: 'Jost', sans-serif;
+    font-size: 20px;
+}
+
+header {
+    margin: auto;
+    text-align: center;
+}
+
+input, label {
+    display: block;
+}
+
+.hidden {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.showing {
+    visibility: visible;
+    opacity: 1;
+}
+
+.example {
+    font-size: 10px;
+}

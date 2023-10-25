@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
+    <title>Ransom Note Generator</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>Generate your own</h1>
+
+
+        <img src="images/ransomlogo.png" height="500" width="656" alt="ransom generator logo">
+
+        <p>You know what you did. Now it's time to reap the benefits- er, ransom for the benefits.</p>
+
+        <button>START</button>
+    </header>
+
+    <form class="hidden">
+        <section id="p1" class="hidden">
+            <h2>Let's get started. Give me some...</h2>
+
+            <h3>Famous person's name</h3>
+            <input type="text" name="fName" id="fName" required>
+            <p class="example">(ex. Brad Pitt, Queen Elizabeth, Tinky-Winky from the hit children's show "Teletubbies")</p>
+
+            <label for="animal">An animal</label>
+            <input type="text" name="animal" id="animal" required>
+            <p class="example">(ex. cockroach, camel, coelacanth)</p>
+
+            <label for="aName">A name</label>
+            <input type="text" name="aName" id="aName" required>
+            <p class="example">(ex. Emma, Thomas, Jackary, Keightlynn)</p>
+
+            <label for="build">A building</label>
+            <input type="text" name="build" id="build" required>
+            <p class="example">(ex. hospital, farm, Jelly Belly Factory, port-a-potty)</p>
+
+        </section>
+
+        <section id="p2" class="hidden">
+            <h2>A little more..</h2>
+
+            <label for="noun">A noun</label>
+            <input type="text" name="noun" id="noun" required>
+            <p class="example">(ex. buttcheek, laptop, grandma's ashes)</p>
+
+            <label for="insult">An insult</label>
+            <input type="text" name="insult" id="insult" required>
+            <p class="example">(ex. idiot, ugly, loser)</p>
+
+            <label for="num1">A number</label>
+            <input type="text" name="num1" id="num1" required>
+            <p class="example">(ex. 352; 1,855,302,548; 7)</p>
+
+            <label for="num2">Another number</label>
+            <input type="text" name="num2" id="num2" required>
+            <p class="example">(ex. 352; 1,855,302,548; 7)</p>
+            
+        </section>
+
+        <section id="p3" class="hidden">
+            <h2>Almost done...</h2>
+
+            <label for="uTime">A unit of time</label>
+            <input type="text" name="uTime" id="uTime" required>
+            <p class="example">(ex. seconds, hours, years, centuries)</p>
+
+            <label for="bPart">A body part, plural</label>
+            <input type="text" name="bPart" id="bPart" required>
+            <p class="example">(ex. elbows, feet, fur)</p>
+
+            <label for="color">A color</label>
+            <input type="text" name="color" id="color" required>
+            <p class="example">(ex. rose pink, neon orange, barf yellow-green)</p>
+
+            <label for="title">Something cool to call yourself</label>
+            <input type="text" name="title" id="title" required>
+            <p class="example">(ex. The Haunter of Cruess Hall, He Who Shalt Not Be Named, The Guy Who Watched Ratatouille 800 Times)</p>
+        </section>
+    </form>
+</body>
+
+</html>
