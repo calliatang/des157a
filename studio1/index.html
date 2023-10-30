@@ -14,23 +14,22 @@
 </head>
 
 <body>
-
     <header>
         <h1>Generate your own</h1>
 
 
-        <img src="images/ransomlogo.png" height="500" width="656" alt="ransom generator logo">
+        <img src="images/ransomlogo.gif" height="400" width="500" alt="ransom generator logo">
 
-        <p>You know what you did. Now it's time to reap the benefits- er, ransom for the benefits.</p>
+        <p>What crime did you commit? Who or what are you holding hostage? It's a surprise!</p>
 
-        <button>START</button>
+        <p id="startPara"><a id="start" href="#p1">START</a></p>
     </header>
 
-    <form class="hidden">
+    <form>
         <section id="p1" class="hidden">
-            <h2>Let's get started. Give me some...</h2>
+            <h2>Let's get started. Give me a...</h2>
 
-            <h3>Famous person's name</h3>
+            <label for="fName">Famous person's name</label>
             <input type="text" name="fName" id="fName" required>
             <p class="example">(ex. Brad Pitt, Queen Elizabeth, Tinky-Winky from the hit children's show "Teletubbies")</p>
 
@@ -46,10 +45,15 @@
             <input type="text" name="build" id="build" required>
             <p class="example">(ex. hospital, farm, Jelly Belly Factory, port-a-potty)</p>
 
+            <label for="build">A country</label>
+            <input type="text" name="country" id="country" required>
+            <p class="example">(ex. Latvia, Malaysia, Chile)</p>
+
+            <p><a id="toP2" href="#p2">CONTINUE</a></p>
         </section>
 
         <section id="p2" class="hidden">
-            <h2>A little more..</h2>
+            <h2>A little more...</h2>
 
             <label for="noun">A noun</label>
             <input type="text" name="noun" id="noun" required>
@@ -57,7 +61,7 @@
 
             <label for="insult">An insult</label>
             <input type="text" name="insult" id="insult" required>
-            <p class="example">(ex. idiot, ugly, loser)</p>
+            <p class="example">(ex. idiot, butthead, loser)</p>
 
             <label for="num1">A number</label>
             <input type="text" name="num1" id="num1" required>
@@ -66,11 +70,12 @@
             <label for="num2">Another number</label>
             <input type="text" name="num2" id="num2" required>
             <p class="example">(ex. 352; 1,855,302,548; 7)</p>
-            
+
+            <p><a id="toP3" href="#p3">CONTINUE</a></p>
         </section>
 
         <section id="p3" class="hidden">
-            <h2>Almost done...</h2>
+            <h2>You're almost done! I know, it's a lot. But who said crime was supposed to be easy?</h2>
 
             <label for="uTime">A unit of time</label>
             <input type="text" name="uTime" id="uTime" required>
@@ -86,9 +91,22 @@
 
             <label for="title">Something cool to call yourself</label>
             <input type="text" name="title" id="title" required>
-            <p class="example">(ex. The Haunter of Cruess Hall, He Who Shalt Not Be Named, The Guy Who Watched Ratatouille 800 Times)</p>
+            <p class="example">(ex. The Haunter of Cruess Hall; She Who Shalt Not Be Named; The Guy Who Watched Ratatouille 800 Times)</p>
+
+            <input id="finish" type="submit" value="FINISH">
         </section>
     </form>
+
+    <section class="hidelay" id="overlay">
+        <article id="result"></article>
+        <img id="money" src="images/money.png" width="260" height="130" alt="money doodle">
+        <img id="dog" src="images/dogdoodle.png" width="300" height="200" alt="dog doodle">
+    </section>
+
+    <footer>
+        <p>Designed by Callia Tang</p>
+        <p><a href="https://validator.w3.org/check?uri=referer">Valid HTML</a></p>
+    </footer>
 </body>
 
 </html>
