@@ -21,7 +21,6 @@ header h1 {
 section {
     color: #fff;
     border-radius: 10px;
-    display: flex;
     gap: 20px;
     margin: 30px 30px 30px 30px;
     align-items: stretch;

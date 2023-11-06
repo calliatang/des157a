@@ -1,0 +1,71 @@
+body {
+    background-color: #ededed;
+    font-family: 'Podkova', serif;
+    color: #171123;
+}
+
+a {
+    color: #171123;
+}
+
+/****************header ******************/
+
+header {
+    text-align: center;
+}
+
+
+/**************nav************************/
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+    margin: auto;
+}
+
+.bNav {
+    list-style-type: none;
+    
+}
+
+/*****************display ***********************/
+
+.hidden {
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    left: -9000px;
+    width: 0;
+    height: 0;
+    transition-property: opacity, visibility;
+    transition-duration: 1s;
+}
+
+.showing {
+    position: relative;
+    visibility: visible;
+    opacity: 1;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+}
+
+/*******************footer*********************/
+
+footer {
+    background-color: #171123;
+    padding: 20px 0 20px 0;
+    text-align: center;
+    margin: auto;
+    width: 100%;
+}
+
+footer p, footer a {
+    color: #ededed;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/*********media queries maybe?*****************/
