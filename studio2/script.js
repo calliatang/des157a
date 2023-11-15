@@ -27,6 +27,8 @@
 
         <img src="skullImgs/skull-0.jpg" height="200" width="200" alt="skeleton blueprint" id="skull" class="space"></img>
 
+        <img src="noteImgs/note-0.jpg" height="200" width="200" alt="dying note" id="note" class="space"></img>
+
         <img src="labelImgs/label-0.jpg" height="200" width="200" alt="bottle label" id="label" class="space"></img>
         </div>
 
@@ -37,6 +39,8 @@
         <p>The culprit goes through extreme lengths to get away with their crime, including the use of poisonous spiders and a secret attic compartment...</p>`;
 
         //mouseover animations
+
+        //for skeleton
         document.addEventListener('mousemove', skullPos);
         const skull = document.querySelector('#skull');
         let skullLoc = 0;
@@ -54,6 +58,25 @@
             }
         }
 
+        //for note
+        document.addEventListener('mousemove', notePos);
+        const note = document.querySelector('#note');
+        let noteLoc = 0;
+
+        function notePos(event) {
+            const windowSize = window.innerWidth;
+            const percent2px = windowSize / 5; //split window into 5 parts
+            const xPos = event.clientX;
+            const changePhoto = Math.floor(xPos / percent2px);
+
+            if (changePhoto !== noteLoc) {
+                note.src = `noteImgs/note-${changePhoto}.jpg`;
+                noteLoc = changePhoto;
+                console.log(noteLoc);
+            }
+        }
+
+        //for label
         document.addEventListener('mousemove', labelPos);
         const label = document.querySelector('#label');
         let labelLoc = 0;
