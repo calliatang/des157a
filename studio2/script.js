@@ -23,10 +23,14 @@
         <div id=container>
         <img src="images/nBook.jpg" height="360" width="600" alt="nancy drew page spread"></img>
 
+        <div id="nPop">
+
         <img src="skullImgs/skull-0.jpg" height="200" width="200" alt="skeleton blueprint" id="skull" class="space"></img>
 
         <img src="labelImgs/label-0.jpg" height="200" width="200" alt="bottle label" id="label" class="space"></img>
         </div>
+
+        <div>
 
         <p>A book chronicling fictional girl detective Nancy Drew's various mysteries. Pictured above is a spread of a mystery regarding a talented musician's death, and his missing music sheets (which of course, can be sold for a lot of money if found...).</p>
         

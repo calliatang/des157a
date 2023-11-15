@@ -104,9 +104,8 @@ nav ul li img:hover {
     display: flex;
 }
 
-.space {
+#nPop {
     display: flex;
-    justify-content: space-evenly;
 }
 
 #tree {
