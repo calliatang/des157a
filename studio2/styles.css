@@ -1,58 +1,124 @@
 body {
-    background-color: #ededed;
-    font-family: 'Podkova', serif;
-    color: #171123;
+    background-color: #f2c3c4;
+    font-family: 'Lexend Deca', Arial, sans-serif;
+    color: #1d3b9d;
 }
 
 a {
-    color: #171123;
+    color: #1d3b9d;
+}
+
+
+/******* IT'S GRID TIME BABY *************/
+
+.grid {
+    width: 1100px;
+    margin: 20px auto;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 15% 28% 28% 28%;
+    gap: 10px;
+    grid-template-areas:
+    "a a a a"
+    "b c c c"
+    "b c c c"
+    "b c c c";
 }
 
 /****************header ******************/
 
 header {
-    text-align: center;
+    font-style: italic;
+    text-align: left;
+    padding: 20px;
+    border-radius: 15px;
+    grid-area: a;
+    background-color: #f5eeee;
+}
+
+header:hover {
+    box-shadow: 0 0 40px #fff;
+}
+
+header h1 {
+    font-size: 30px;
+}
+
+header h2 {
+    font-size: 20px;
 }
 
 
 /**************nav************************/
 
+nav {
+    grid-area: b;
+    margin: 0;
+    translate: -60px;
+}
+
 nav ul {
     list-style-type: none;
+    text-decoration: none;
+}
+
+nav ul li {
+    padding: 20px 20px 20px 20px;
+    margin: 0;
+}
+
+nav ul li img {
+    border-radius: 5px;
+}
+
+nav ul li img:hover {
+    box-shadow: 0 0 40px #fff;
+    animation: wiggle 0.5s ease;
+}
+
+/*****************info box ***********************/
+
+#info {
+    grid-area: c;
+    background-color: #fff;
+    box-shadow: 0 0 30px #fff;
+    border-radius: 15px;
+    margin: 20px 0 0 0;
+}
+
+
+#info h1, p {
     text-align: center;
+    font-size: 20px;
+    padding: 30px;
     margin: auto;
 }
 
-.bNav {
-    list-style-type: none;
-    
+#info p {
+    width: 50%;
 }
 
-/*****************display ***********************/
-
-.hidden {
-    position: absolute;
-    opacity: 0;
-    top: 0;
-    left: -9000px;
-    width: 0;
-    height: 0;
-    transition-property: opacity, visibility;
-    transition-duration: 1s;
+#info img {
+    margin: auto;
+    padding: 10px;
+    display: flex;
 }
 
-.showing {
-    position: relative;
-    visibility: visible;
-    opacity: 1;
-    transition-duration: 1s;
-    transition-timing-function: ease;
+.space {
+    display: flex;
+    justify-content: space-evenly;
 }
+
+#tree {
+    margin: auto;
+    padding: 20px 20px 20px 20px;
+}
+
 
 /*******************footer*********************/
 
 footer {
-    background-color: #171123;
+    background-color: #1d3b9d;
     padding: 20px 0 20px 0;
     text-align: center;
     margin: auto;
@@ -68,4 +134,23 @@ footer a:hover {
     text-decoration: underline;
 }
 
-/*********media queries maybe?*****************/
+
+/*************animations***********************/
+
+@keyframes wiggle {
+    0% {
+      transform: rotate(0);
+    }
+    25% {
+      transform: rotate(-4deg);
+    }
+    50% {
+      transform: rotate(4deg);
+    }
+    75% {
+      transform: rotate(-4deg);
+    }
+    100%{
+      transform: rotate(0);
+    }
+  }
