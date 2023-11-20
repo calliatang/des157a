@@ -1,0 +1,53 @@
+body {
+    background-color: #ffb5a7;
+    color: #355070;
+    font-family: 'Lexend Deca', Arial, sans-serif;
+    font-size: 16px;
+}
+
+/********************grid***********************/
+
+.grid {
+    width: 1000px;
+    margin: auto;
+    padding: 100px;
+    display: grid;
+    grid-template-columns: 15% 28% 28% 28%;
+    gap: 10px;
+    grid-template-areas:
+    "a a c c"
+    "a a c c"
+    "b b d d";
+}
+
+#info {
+    grid-area: a;
+    background-color: #fff;
+    box-shadow: 0 0 40px #fff;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+#gamecontrol {
+    grid-area: b;
+    background-color: #fff;
+    box-shadow: 0 0 40px #fff;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+#gameactions {
+    grid-area: c;
+    background-color: #fff;
+    box-shadow: 0 0 40px #fff;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+#gamescore {
+    grid-area: d;
+    background-color: #fff;
+    box-shadow: 0 0 40px #fff;
+    border-radius: 15px;
+    padding: 20px;
+}

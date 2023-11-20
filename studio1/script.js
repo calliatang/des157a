@@ -96,14 +96,14 @@
             myText =
             `
             <h3>Your finished note:</h3>
-            <p>Dear ${fName},</p>
+            <p>Dear <span>${fName}</span>,</p>
 
-            <p>I regret to inform you that I am currently in possession of your pet ${animal}, ${aName}. Do NOT call the cops on me, or I will most definitely send your precious little animal baby to a remote ${build} in ${country} where you will never see them again. It’s what you get for refusing to sign my ${noun}. That was supposed to be a big emotional moment for me, and you RUINED IT, ${insult}.</P>
+            <p>I regret to inform you that I am currently in possession of your pet <span>${animal}</span>, <span>${aName}</span>. Do NOT call the cops on me, or I will most definitely send your precious little animal baby to a remote <span>${build}</span> in <span>${country}</span> where you will never see them again. It’s what you get for refusing to sign my <span>${noun}</span>. That was supposed to be a big emotional moment for me, and you RUINED IT, <span>${insult}</span>.</P>
             
-            <p>Anyway, if you want to see your pet again, you must wire me ${num1} dollars within the next ${num2} ${uTime} or I will gradually dye all of its ${bPart} with ${color} Sharpie ink until its a stinky, ugly mess. You do NOT want to mess with me. You have only yourself to blame.</P>
+            <p>Anyway, if you want to see your pet again, you must wire me <span>${num1}</span> dollars within the next <span>${num2}</span> <span>${uTime}</span> or I will gradually dye all of its <span>${bPart}</span> with <span>${color}</span> Sharpie ink until its a stinky, ugly mess. You do NOT want to mess with me. You have only yourself to blame.</P>
             
             <p>Signed,</p>
-            <p>${title}</p>
+            <p><span>${title}</span></p>
             
             <p><a id="exit">MAKE ANOTHER NOTE?</a></p>`;
 
