@@ -113,7 +113,7 @@
 
         //two 1s are rolled
         if (gameData.rollSum === 2) {
-            game.innerHTML += '<p>Twin Magicians! They reset your points!</p>';
+            game.innerHTML += '<p>Twin Magicians! They reset the score of your opponent!</p>';
             gameData.score[gameData.index] = 0;
             gameData.index ? (gameData.index = 0) : (gameData.index = 1);
             showCurrentScore();
@@ -129,7 +129,7 @@
         }
         //rolls two 2s
         else if (gameData.roll1 === 2 && gameData.roll2 === 2) {
-            game.innerHTML += '<p>Twin High Priestesses! They multiply your score by -1.5!</p>'
+            game.innerHTML += "<p>Twin High Priestesses! They multiply your opponent's score by -1.5!</p>"
             gameData.index ? (gameData.index = 0) : (gameData.index = 1);
             showCurrentScore();
             twinkle.play();
@@ -145,7 +145,7 @@
         }
         //rolls two 3s
         else if (gameData.roll1 === 3 && gameData.roll2 === 3) {
-            game.innerHTML += '<p>Twin Emperesses! They take 22 points from you!</p>'
+            game.innerHTML += '<p>Twin Emperesses! They take 22 points from your opponent!</p>'
             gameData.index ? (gameData.index = 0) : (gameData.index = 1);
             showCurrentScore();
             twinkle.play();
@@ -161,7 +161,7 @@
         }
         //rolls two 4s
         else if (gameData.roll1 === 4 && gameData.roll2 === 4) {
-            game.innerHTML += '<p>Twin Emperors! They add 5 points to your score!</p>'
+            game.innerHTML += "<p>Twin Emperors! They add 5 points to your opponent's score!</p>"
             gameData.index ? (gameData.index = 0) : (gameData.index = 1);
             showCurrentScore();
             twinkle.play();
@@ -183,7 +183,7 @@
         }
         //rolls two 5s
         else if (gameData.roll1 === 5 && gameData.roll2 === 5) {
-            game.innerHTML += '<p>Twin Hierophants! They multiply your score by 1.3!</p>'
+            game.innerHTML += "<p>Twin Hierophants! They multiply your opponent's score by 1.3!</p>"
             gameData.index ? (gameData.index = 0) : (gameData.index = 1);
             showCurrentScore();
             twinkle.play();
@@ -205,7 +205,7 @@
         }
         //rolls two 6s
         else if (gameData.roll1 === 6 && gameData.roll2 === 6) {
-            game.innerHTML += '<p>Twin...lovers? A double date! Your score is divided by two!</p>'
+            game.innerHTML += "<p>Twin...lovers? A double date! Your opponent's score is divided by two!</p>"
             gameData.index ? (gameData.index = 0) : (gameData.index = 1);
             showCurrentScore();
             twinkle.play();
