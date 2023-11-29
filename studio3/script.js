@@ -14,7 +14,6 @@
     //sound variables
     const flip = new Audio('sounds/flip.mp3'); //for card flipping
     const harp = new Audio('sounds/harp.mp3'); //starting game
-    const whoosh = new Audio('sounds/whoosh.mp3'); //pass turn
     const win = new Audio('sounds/win.mp3'); //win game
     const laugh = new Audio('sounds/laugh.mp3'); //magician
     const twinkle = new Audio('sounds/twinkle.mp3'); //twin cards
@@ -231,7 +230,7 @@
             laugh.play();
             gameData.index ? (gameData.index = 0) : (gameData.index = 1); //switches turn
             game.innerHTML += `<p>The Magician magicks your turn away to ${gameData.players[gameData.index]}!</p>`;
-            setTimeout(setUpTurn, 2500);
+            setTimeout(setUpTurn, 3500);
 
             showCurrentScore();
         }
@@ -249,7 +248,6 @@
             document.getElementById('pass').addEventListener('click', function () {
                 gameData.index ? (gameData.index = 0) : (gameData.index = 1);
                 setUpTurn();
-                whoosh.play(); //plays whoosh sound
             });
 
             showCurrentScore();
