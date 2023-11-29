@@ -1,23 +1,28 @@
 body {
-    background-color: #ffb5a7;
+    background-color: #91b39a;
     color: #355070;
     font-family: 'Lexend Deca', Arial, sans-serif;
     font-size: 16px;
+    transition: 1s;
 }
 
 /********************grid***********************/
 
 .grid {
-    width: 1000px;
+    width: 1100px;
     margin: auto;
-    padding: 100px;
+    padding: 30px;
     display: grid;
-    grid-template-columns: 15% 28% 28% 28%;
+    grid-template-columns: 10% 23% 23% 23% 23%;
     gap: 10px;
     grid-template-areas:
-    "a a c c"
-    "a a c c"
-    "b b d d";
+    "a a c c c"
+    "b b c c c"
+    "e e d d d";
+}
+
+#info:hover, #gamecontrol:hover, #gameactions:hover, #gamescore:hover {
+    box-shadow: 0 0 40px #b7b6b672;
 }
 
 #info {
@@ -26,6 +31,8 @@ body {
     box-shadow: 0 0 40px #fff;
     border-radius: 15px;
     padding: 20px;
+    transition: 1s;
+    height: 450px;
 }
 
 #gamecontrol {
@@ -34,6 +41,8 @@ body {
     box-shadow: 0 0 40px #fff;
     border-radius: 15px;
     padding: 20px;
+    transition: 1s;
+    height: 150px;
 }
 
 #gameactions {
@@ -42,6 +51,11 @@ body {
     box-shadow: 0 0 40px #fff;
     border-radius: 15px;
     padding: 20px;
+    transition: 1s;
+}
+
+#actions {
+    margin: 10px;
 }
 
 #gamescore {
@@ -50,4 +64,125 @@ body {
     box-shadow: 0 0 40px #fff;
     border-radius: 15px;
     padding: 20px;
+    transition: 1s;
+    height: 100px;
+}
+
+
+/**************************info box*****************************/
+
+button {
+    border-radius: 10px;
+    padding: 15px;
+    transition: 0.5s;
+}
+
+button:hover {
+    box-shadow: 0 0 10px #00000095;
+}
+
+span {
+    color: red;
+}
+
+
+.hidden {
+    opacity: 0;
+    transition: 1s;
+}
+
+.showing {
+    opacity: 1;
+    transition: 1s;
+}
+
+
+
+/************* card flip animations ****************/
+
+.card {
+    position: relative;
+    padding: 20px;
+    perspective: 1000px;
+}
+     
+.card:hover .back {
+    transform: rotateY(0deg);
+ }
+ 
+.card:hover .front {
+    transform: rotateY(-180deg);
+ }
+ 
+ .back, .front {
+    backface-visibility: hidden;
+    border-radius: 10px;
+    transition: 1s;
+ }
+ 
+ .back { 
+    position: fixed;
+    height: 460px;
+    width: 230px;
+    border: 5px solid #2c514c;
+    background-image: url(images/cardback.svg);
+    transform: rotateY(180deg);
+ }
+ 
+ .front img {
+    border:5px solid #2c514c;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+ }
+
+ #cardGroup {
+    display: flex;
+    gap: 20px;
+ }
+
+
+
+
+
+
+
+/* @keyframes frontFlip {
+    0% {
+        transform: rotateY(-180deg);
+    }
+	100% {
+		transform: rotateY(0deg);
+	}
+}
+
+@keyframes backFlip {
+    0% {
+        transform: rotateY(0deg); 
+    }
+
+    100% {
+        transform: rotateY(180deg);
+    }
+}
+ */
+
+/**************footer************************/
+
+footer {
+    background-color: #1c322f;
+    padding: 20px 0 20px 0;
+    text-align: center;
+    margin: auto;
+    width: 100%;
+}
+
+footer p, footer a {
+    color: #ededed;
+}
+
+#foots {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
 }

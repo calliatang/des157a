@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The PIGsty</title>
+    <title>The Fickle Fates</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
     <link href="styles.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,26 +17,40 @@
     <div class="grid">
 
         <div id="info">
-        <h1>The PIGsty</h1>
-            <p>There are two players. The player whose turn it is rolls the dice. The total of the roll is added to the current player's score, unless either die comes up as a "one". If this happens, this player's turn is over, and it is the other player’s turn. After each roll, the current player can either roll again, (assuming a "one" was not rolled) or if the current player feels that luck is running thin, they can pass to the other player. The first player to get 30 points or higher wins.</p>
+            <h1>The Fickle Fates</h1>
 
-            <p>If both of the dice you roll are the same value, you get special penalties.</p>
+                <p>Dearest players who come in two,</p>
+
+                <p>Upon starting the game, a random player will be chosen. The player whose turn it is shall flip two tarot cards, with each card harboring a value from <span>one to six</span>. The total value of both cards is added to the current player's score. After each roll, the current player can either roll again, or pass their turn to the other player. Encountering the <span>Magician</span> will end your turn. The first player to reach <span>50 points or higher</span> shall emerge victorious.</p>
+
+                <p>If you get <span>two of the same card</span>, your opponent's score will receive mysterious effects, and their turn will start. Be careful--these effects can either hinder them or push them closer to victory!</p>
+            </div>
+
+            <div id="gamecontrol">
+                <h2>Start Game</h2>
+                <button id="startgame">Randomly Pick the First Player, and Start the Game</button>
+            </div>
+
+            <div id="gameactions">
+                <div id="game"></div>
+                <div id="actions"></div>
+            </div>
+
+            <div id="gamescore" class="hidden">
+            <div id="score"></div>
         </div>
 
-        <div id="gamecontrol">
-            <h2>Start Game</h2>
-            <button id="startgame">Randomly Pick the First Player, and Start the Game</button>
-        </div>
-
-        <div id="gameactions">
-            <div id="game"></div>
-            <div id="actions"></div>
-        </div>
-
-        <div id="gamescore">
-        <div id="score"></div>
-        </div>
     </div>
+
+    <footer>
+        <p>Designed by Callia Tang</p>
+        <div id="foots">
+            <p>Tarot card images from <a href="https://stablediffusionweb.com/#ai-image-generator">Stable Diffusion</a></p>
+            <p>Sound effects from <a href="https://pixabay.com/">Pixabay</a></p>
+            <p><a href="https://validator.w3.org/check?uri=referer">Valid HTML</a></p>
+        </div>
+        
+    </footer>
 </body>
 
 </html>
