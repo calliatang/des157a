@@ -230,7 +230,7 @@
             laugh.play();
             gameData.index ? (gameData.index = 0) : (gameData.index = 1); //switches turn
             game.innerHTML += `<p>The Magician magicks your turn away to ${gameData.players[gameData.index]}!</p>`;
-            setTimeout(setUpTurn, 3500);
+            setTimeout(setUpTurn, 4000);
 
             showCurrentScore();
         }
