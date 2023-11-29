@@ -161,12 +161,12 @@
         }
         //rolls two 4s
         else if (gameData.roll1 === 4 && gameData.roll2 === 4) {
-            game.innerHTML += "<p>Twin Emperors! They add 5 points to your opponent's score!</p>"
+            game.innerHTML += "<p>Twin Emperors! They add 20 points to your opponent's score!</p>"
             gameData.index ? (gameData.index = 0) : (gameData.index = 1);
             showCurrentScore();
             twinkle.play();
 
-            gameData.score[gameData.index] = gameData.score[gameData.index] + 5;
+            gameData.score[gameData.index] = gameData.score[gameData.index] + 20;
             actionArea.innerHTML = '<button id="rollagain">Next Player</button>';
 
             document.getElementById('rollagain').addEventListener('click', function () {
