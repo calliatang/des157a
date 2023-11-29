@@ -27,7 +27,7 @@
         roll2: 0,
         rollSum: 0,
         index: 0,
-        gameEnd: 49
+        gameEnd: 49.9
     };
 
     /* //This gets the current player: 
