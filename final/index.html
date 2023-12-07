@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SILLY BOOKS</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap" rel="stylesheet">
+
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>SILLY BOOKS</h1>
+        <h2>Books with fun interactions</h2>
+    </header>
+
+
+<article id="intro">
+        <p>Hello! This is a site for looking at all the silly fun interactive books I enjoyed reading as a kid. Scroll down and take a look!</p>
+    </article>
+   <!--  <nav>
+        <ul>
+            <li><a id="fairy"><img src="images/fairycover.jpeg" height="179" width="153" alt="fairyopolis cover"></a>
+            </li>
+            <li><a id="nancy"><img src="images/nancy.jpg" height="170" width="145" alt="nancy drew cover"></a></li>
+            <li><a id="kit"><img src="images/kitcover.jpeg" height="145" width="144" alt="kit's world cover"></a>
+            </li>
+        </ul>
+    </nav> -->
+
+    
+
+    <article class="page">
+        <div>
+            <img src="images/fBook.jpg" height="362" width="600" alt="fairyopolis spread" id="fairy" class="big">
+            <a class="icon"><img src="images/fairycover.jpeg" height="179" width="153" alt="fairyopolis cover"></a>
+        </div>
+
+        <div class="text">
+            <h2>Fairyopolis</h2>
+
+            <p>A whimsical book about an adult woman trying to prove that fairies exist (much more heartwarming than it sounds). Uses a whimsical script font to emulate a journal/diary feel.</p>
+
+            <p>Click the page spread for a surprise!</p>
+        </div>
+        
+    </article>
+
+    <article class="page">
+        <div>
+            <img src="images/nBook.jpg" height="360" width="600" alt="nancy drew page spread" id="nancy" class="big">
+            <a class="icon"><img src="images/nancy.jpg" height="170" width="145" alt="nancy drew cover"></a>
+        </div>
+
+
+        <div class="text">
+        <h2>The Lost Files of Nancy Drew</h2>
+
+        <p>A book chronicling fictional girl detective Nancy Drew's various mysteries. Pictured above is a spread of a mystery regarding a talented musician's death, and his missing music sheets (which of course, can be sold for a lot of money if found...).</p>
+        
+        <p>The culprit goes through extreme lengths to get away with their crime, including the use of poisonous spiders and a secret attic compartment...</p>
+
+        <p>Click the page spread for a surprise!</p>
+        </div>
+    </article>
+
+    <article class="page">
+        <div>
+            <img src="treeImgs/tree-0.jpeg" height="360" width="600" alt="treehouse pop-up" id="tree" class="big">
+            <a class="icon"><img src="images/kitcover.jpeg" height="145" width="144" alt="kit's world cover"></a>
+        </div>
+
+        <div class="text">
+        <h2>Kit's World</h2>
+
+        <p>Historical fiction about a girl named Kit, and her daily life during the Great Depression. Pictured above is a treehouse her dad built at her request. Really putting the "fiction" in "historical fiction here.</p>
+
+        <p>Move your mouse for a surprise!</p>
+        </div>
+    </article>
+
+
+    <!--OVERLAYS-------------------------->
+
+    <section class="hidelay" id="game">
+        <article id="gametxt">
+            <img src="daisyImgs/daisy-0.jpg" height="315" width="240" alt="daisy puzzle" id="daisy">
+            <div id="p1"></div>
+            <div id="p2"></div>
+            <div id="p3"></div>
+            <div id="p4"></div>
+            <div id="p5"></div>
+            <div id="p6"></div>
+            <div id="p7"></div>
+
+            <p>The daisy fairy's hiding under one of the daisy petals! Click the petals to find her!</p>
+
+            <p id="exit1">Exit</p>
+        </article>
+    </section>
+
+    <section class="hidelay" id="nancypics">
+        <article>
+            <div>
+                <img src="skullImgs/skull-0.jpg" height="200" width="200" alt="skeleton blueprint" id="skull" class="space">
+
+                <img src="noteImgs/note-0.jpg" height="200" width="200" alt="dying note" id="note" class="space">
+
+                <img src="labelImgs/label-0.jpg" height="200" width="200" alt="bottle label" id="label" class="space">
+            </div>
+            
+            <p>Move your mouse to check out these lift-the-flap animations!</p>
+            <p id="exit2">Exit</p>
+        </article>
+    </section>
+
+
+    <footer>
+        <p>Designed by Callia Tang</p>
+        <p><a href="https://validator.w3.org/check?uri=referer">Valid HTML</a></p>
+    </footer>
+</body>
+
+</html>
